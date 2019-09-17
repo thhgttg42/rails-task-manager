@@ -1,0 +1,8 @@
+<% @tasks.each do |task| %>
+
+<h1><%= task.title %></h1>
+<%= task.details %>
+<%= task.completed %>
+<%= link_to "I am a dashing link", task_path(task) %>
+<% end %>
+
